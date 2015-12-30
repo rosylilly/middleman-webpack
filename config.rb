@@ -37,3 +37,11 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+npm_prefix = `npm bin`.strip
+
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? "#{npm_prefix}/webpack" : "#{npm_prefix}/webpack --watch -d",
+  source: './assets/javascripts',
+  latency: 1
