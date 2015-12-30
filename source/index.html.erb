@@ -6,8 +6,23 @@ title: Welcome to Middleman
   <div class="logo">
     <%= image_tag "middleman-logo.svg" %>
   </div>
-  <h1>Middleman is Running</h1>
-  <p class="doc">
-    <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
-  </p><!-- .doc -->
+  <h1>Middleman &amp; Webpack is Running</h1>
+  <div id="zengin-code" class="doc">
+    <h2>Bank Search</h2>
+    <input v-model="name" placeholder="銀行名">
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="bank in banks | filterBy name in 'name' 'kana' 'roma' 'hira' | orderBy 'code'">
+          <td>{{bank.code}}</th>
+          <td>{{bank.name}}</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div><!-- .welcome -->

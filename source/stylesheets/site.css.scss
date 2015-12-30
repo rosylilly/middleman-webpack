@@ -22,10 +22,19 @@ h1 {
 }
 
 .doc {
-  margin: 3em 0;
+  margin: 3em auto;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   font-weight: 300;
+  color: rgba(0,0,0,0.5);
+  width: 400px;
+  max-width: 100%;
+
+  h2 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
 
   a {
     border: 1px solid white;
@@ -38,6 +47,28 @@ h1 {
       background: rgba(0,0,0,0.2);
       color: white;
       transition: all 0.15s linear;
+    }
+  }
+
+  input {
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    font-size: 100%;
+    padding: 3px 6px;
+    width: 100%;
+  }
+
+  table {
+    margin: 1em auto;
+    box-sizing: border-box;
+    width: 100%;
+
+    td, th {
+      border: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, .3);
+      text-align: left;
     }
   }
 }
