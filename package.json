@@ -9,6 +9,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "webpack": "^1.12.9"
+    "vue": "^1.0.13",
+    "webpack": "^1.12.9",
+    "zengin-code": "^1.0.0-p20151228"
   }
 }
